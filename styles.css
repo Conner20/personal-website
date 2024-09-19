@@ -349,6 +349,7 @@ img {
 .home__scroll-button{
     color: var(--first-color);
     transition: .3s;
+    cursor: pointer;
 }
 
 .home__scroll-button:hover{
@@ -464,15 +465,23 @@ img {
     /* Box background */
     padding: 20px;
     /* Reduced padding to minimize space inside */
+    border: 2px solid transparent;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
-    border: 10px solid var(--first--color);
     /* Box shadow */
     display: flex;
     flex-direction: column;
     /* Stack content vertically */
     justify-content: space-between;
     /* Spread content within the box */
+    border-radius: 12px;
     width: 300px;
+    transition: 0.2s ease;
+}
+
+.skills__content:hover {
+    /* background-color: blue; */
+    /* border: 10px solid blue; */
+    border-color: var(--first-color);
 }
 
 .skills__container{
@@ -809,7 +818,7 @@ img {
 }
 
 .card-list .card-link .card-title {
-    font-size: 1.19rem;
+    font-size: 0.9rem;
     color: #000;
     font-weight: 600;
 }
@@ -1201,6 +1210,7 @@ img {
         column-gap: 2rem;
     }
     .footer__socials{
+        margin-left: 520px;
         justify-self: flex-end;
     }
     .footer__copy{
