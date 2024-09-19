@@ -819,7 +819,7 @@ img {
 
 .card-list .card-link .card-title {
     font-size: 0.9rem;
-    color: #000;
+    color: var(--title-color);
     font-weight: 600;
 }
 
