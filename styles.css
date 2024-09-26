@@ -143,6 +143,7 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
     padding: 2rem 0 4rem;
+    /* text-align: center; */
 }
 
 .section__title {
@@ -402,7 +403,6 @@ img {
     width: 200px;
     border-radius: .5rem;
     justify-self: center;
-    align-items: center;
 }
 
 .about__description{
@@ -1062,6 +1062,32 @@ img {
         width: 180px;
     }
 
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .about__img {
+        width: 350px;
+    }
+
+    .about__description {
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .about__info {
+        justify-content: space-between;
+    }
+
+    .about__buttons {
+        justify-content: center;
+    }
+
     .skills__title{
         font-size: var(--normal-font-size);
     }
@@ -1164,6 +1190,10 @@ img {
     .about{
         position: relative;
         top: -300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .about__container{
@@ -1173,13 +1203,14 @@ img {
         width: 350px;
     }
     .about__description{
+        justify-content: center;
         text-align: center;
     }
     .about__info{
         justify-content: space-between;
     }
     .about__buttons{
-        justify-content: initial;
+        justify-content: center;
     }
 
     .qualification__tabs{
